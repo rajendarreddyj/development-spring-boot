@@ -21,8 +21,15 @@ allprojects {
 	ext {
 		// compile/runtime dependency versions
 		springBootVersion = '2.0.3.RELEASE'
+        springKafkaVersion = '2.1.7.RELEASE'
 		reactorVersion='3.1.8.RELEASE'
-	    junitVersion="4.12"
+        springCloudDepVersion='Finchley.RELEASE'
+		springCloudVersion = '2.0.0.RELEASE'
+		kafkaVersion='1.1.0'
+		lombokVersion='1.18.0'
+	    junitVersion='4.12'
+
+        gradleaptpluginVersion='0.16'
 	}
 }
 

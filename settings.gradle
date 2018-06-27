@@ -17,5 +17,7 @@ include 'services:webservice'
 
 rootProject.name = 'development-spring'
 include ':reactive-web-example'
+include ':cloud-kafka-stream-example'
 
 project(':reactive-web-example').projectDir = "$rootDir/reactive-web-example" as File
+project(':cloud-kafka-stream-example').projectDir = "$rootDir/cloud-kafka-stream-example" as File
