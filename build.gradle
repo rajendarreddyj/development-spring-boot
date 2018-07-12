@@ -25,9 +25,10 @@ allprojects {
 		reactorVersion='3.1.8.RELEASE'
         springCloudDepVersion='Finchley.RELEASE'
 		springCloudVersion = '2.0.0.RELEASE'
+		springFrameworkVersion = '5.0.7.RELEASE'
 		kafkaVersion='1.1.0'
 		lombokVersion='1.18.0'
-	    junitVersion='4.12'
+	    junitVersion='5.2.0'
 
         gradleaptpluginVersion='0.16'
 	}
@@ -74,8 +75,21 @@ subprojects {
 		//testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
 		//testCompile("io.projectreactor:reactor-test:${reactorVersion}")
 		// Use JUnit test framework
-		testCompile "junit:junit:${junitVersion}"
+        testCompileOnly (
+				"junit:junit:4.12"
+		)
+		testImplementation(
+				"org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+		)
+		testRuntimeOnly(
+				"org.junit.jupiter:junit-jupiter-engine:${junitVersion}",
+				"org.junit.vintage:junit-vintage-engine:${junitVersion}"
+		)
 	}
+
+    test {
+        useJUnitPlatform()
+    }
 
 }
 
