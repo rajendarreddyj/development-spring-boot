@@ -15,7 +15,7 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'development-spring'
+rootProject.name = 'development-spring-boot'
 include ':reactive-web-example'
 include ':cloud-kafka-stream-example'
 
