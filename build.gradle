@@ -12,7 +12,7 @@ group = 'com.rajendarreddyj'
 // define the version of the GAV
 version = 1.0
 
-description = "Root project of the Spring projects that uses Gradle."
+description = "Root project of the Spring Boot projects that uses Gradle."
 
 
 allprojects {
