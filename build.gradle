@@ -21,23 +21,23 @@ allprojects {
 	ext {
 		// compile/runtime dependency versions
 		springBootVersion = '2.0.3.RELEASE'
-        springKafkaVersion = '2.1.7.RELEASE'
+		springKafkaVersion = '2.1.7.RELEASE'
 		reactorVersion='3.1.8.RELEASE'
-        springCloudDepVersion='Finchley.RELEASE'
+		springCloudDepVersion='Finchley.RELEASE'
 		springCloudVersion = '2.0.0.RELEASE'
 		springFrameworkVersion = '5.0.7.RELEASE'
 		kafkaVersion='1.1.0'
 		lombokVersion='1.18.0'
-	    junitVersion='5.2.0'
+		junitVersion='5.2.0'
 
-        gradleaptpluginVersion='0.16'
+		gradleaptpluginVersion='0.16'
 	}
 }
 
 subprojects {
 	//Instructions for each sub project
 	// Apply the java plugin to add support for Java
-    apply plugin: 'java'
+	apply plugin: 'java'
 	apply plugin: 'eclipse'
 	apply plugin: 'idea'
 	group = rootProject.group
@@ -95,5 +95,5 @@ subprojects {
 
 // Running 'gradle wrapper' will generate gradlew - Getting gradle wrapper working and using it will save you a lot of pain.
 task wrapper(type: Wrapper) {
-	gradleVersion = '4.8.1'
+	gradleVersion = '4.9'
 }
