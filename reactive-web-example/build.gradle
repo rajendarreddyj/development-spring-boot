@@ -5,6 +5,10 @@ apply plugin: 'io.spring.dependency-management'
 
 description = "reactive web example"
 
+javaVersion = '10'
+
+sourceCompatibility = "${javaVersion}"
+targetCompatibility = "${javaVersion}"
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}")
